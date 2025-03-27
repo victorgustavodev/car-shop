@@ -1,0 +1,8 @@
+{
+    "cars": [
+        { "id": 1, "name": "Car 1", "price": "$20,000", "image": "@/assets/Car-1.png", "colorMain": "#212126" },
+        { "id": 2, "name": "Car 2", "price": "$25,000", "image": "@/assets/Car-2.png", "colorMain": "#59B6E6" },
+        { "id": 3, "name": "Car 3", "price": "$30,000", "image": "@/assets/Car-3.png", "colorMain": "#B40500" },
+        { "id": 4, "name": "Car 4", "price": "$50,000", "image": "@/assets/Car-4.png", "colorMain": "#FF9597" }
+    ]
+}
