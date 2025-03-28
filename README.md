@@ -1,5 +1,5 @@
-# Classic Car Store
-## Totalmente desenvolvido para fins de prática e estudo.
+## Classic Car Store 🚗
+# Totalmente desenvolvido para fins de prática e estudo.
 
 Bem-vindo ao **Classic Car Store**, uma aplicação desenvolvida com Vue.js para exibir uma seleção de carros clássicos. Este projeto utiliza conceitos fundamentais do Vue.js, como componentes, diretivas, propriedades reativas e computadas, além de estilização com Tailwind CSS.
 
