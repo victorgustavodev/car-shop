@@ -9,6 +9,8 @@ Bem-vindo ao **Classic Car Store**, uma aplicação desenvolvida com Vue.js para
 - **Exibição Dinâmica**: As informações do carro selecionado, como nome, ano, fabricante, preço e imagem, são exibidas dinamicamente.
 - **Estilização Personalizada**: O fundo e o menu lateral mudam de cor com base no carro selecionado, utilizando propriedades reativas.
 - **Responsividade**: A interface é responsiva e adaptada para diferentes tamanhos de tela.
+- **Componentização**: A aplicação é dividida em componentes reutilizáveis, como `CarList` e `CarDetails`, para facilitar a manutenção e escalabilidade.
+- **Uso de Props**: Os componentes utilizam `props` para receber dados de forma dinâmica, promovendo maior flexibilidade e reutilização.
 
 ## Tecnologias Utilizadas
 
@@ -25,6 +27,7 @@ A estrutura principal do projeto é a seguinte:
 src/
 ├── App.vue          # Componente principal da aplicação
 ├── main.js          # Arquivo de entrada para inicializar o Vue
+├── components/      # Componentes reutilizáveis como CarList e CarDetails
 ├── assets/          # Imagens dos carros e outros recursos estáticos
 public/
 ├── index.html       # Arquivo HTML principal
@@ -36,7 +39,8 @@ public/
 - **Diretivas**: Uso de `v-for` para renderizar dinamicamente a lista de carros e `v-bind` para vincular atributos.
 - **Propriedades Computadas**: A propriedade `selectedCar` é calculada dinamicamente com base no carro selecionado.
 - **Reatividade**: Alterações no estado da aplicação atualizam automaticamente a interface do usuário.
-- **Componentização**: Estrutura modular com o componente principal `App.vue`.
+- **Componentização**: Estrutura modular com componentes como `CarList` e `CarDetails`.
+- **Props**: Os componentes recebem dados dinamicamente através de `props`, permitindo maior flexibilidade e reutilização.
 
 ## Como Executar o Projeto
 
@@ -70,7 +74,7 @@ public/
 
 ## Personalização
 
-Os dados dos carros estão localizados no arquivo `App.vue` e podem ser facilmente alterados para adicionar ou modificar os carros exibidos.
+Os dados dos carros estão localizados no arquivo `App.vue` e podem ser facilmente alterados para adicionar ou modificar os carros exibidos. Além disso, os componentes podem ser estendidos ou personalizados para atender a diferentes necessidades.
 
 ## Contribuição
 
