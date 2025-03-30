@@ -44,7 +44,7 @@
               <div class="flex flex-col gap-4">
           <p class="text-3xl font-extrabold uppercase md:text-xl">{{ selectedCar.price }}</p>
           <button
-            class="h-[40px] px-10 w-fit bg-blue-600 text-white cursor-pointer font-bold rounded-lg uppercase transition-all hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            @click= 'buyNow()' class="h-[40px] px-10 w-fit bg-blue-600 text-white cursor-pointer font-bold rounded-lg uppercase transition-all hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
             Buy Now
           </button>
               </div>
@@ -72,6 +72,12 @@
 <script>
 
 export default {
+
+  methods: {
+    buyNow() {
+      alert(`You selected: ${this.selectedCar.name} \nIts price is: ${this.selectedCar.price}`);
+    },
+  },
   name: 'App',
   data() {
     return {
