@@ -1,20 +1,7 @@
 <template>
   <div class="flex h-screen" :style="{ background: `radial-gradient(circle, #fff 1%, ${selectedCar.colorMain} 70%)` }">
-    <nav class="flex flex-col items-center w-full md:w-[107px] h-fit md:h-screen shadow-xl shadow-black md:w-[80px]"
-      :style="{ background: selectedCar.colorMain }">
-      <div class="bg-white w-full min-h-[170px] flex justify-center items-center md:min-h-[100px]">
-        <img src="./assets/logo.png" alt="Logo" class="w-[80px] md:w-[60px]">
-      </div>
-      <div class="md:h-full w-full flex justify-center items-center">
-        <ul class="uppercase md:tracking-widest text-center flex justify-between items-center h-4/5 text-[16px] font-bold md:text-[12px]">
-          <li>cadilac</li>
-          <li>lincoln</li>
-          <li>chevrolet</li>
-          <li>citroen</li>
-          <li>mercedes</li>
-        </ul>
-      </div>
-    </nav>
+    
+    <Navbar :backgroundColor="selectedCar.colorMain" />
 
     <div class="flex flex-col w-full justify-center items-center">
 
@@ -52,26 +39,24 @@
           </div>
         </section>
 
-        <!-- Linha central -->
-        <!-- <div class="w-[1px] h-full bg-white"></div> -->
-
-        <section class="flex flex-col w-[70%] h-full gap-10 items-center justify-center mt-10 text-center">
-          <div class="h-full w-full flex justify-center items-center pt-10">
-            <section class="flex flex-col gap-20 items-center justify-center text-center">
-              <img :src="selectedCar.image" :alt="selectedCar.name" class="w-[90%] max-w-[90%]" />
-            </section>
-          </div>
-        </section>
+        <MainImage :selectedCar="selectedCar" />
 
       </div>
-
     </div>
+
   </div>
 </template>
 
 <script>
 
+import MainImage from "./components/MainImage.vue";
+import Navbar from "./components/Navbar.vue";
+
 export default {
+  components: {
+    Navbar,
+    MainImage
+  },
 
   methods: {
     buyNow() {
